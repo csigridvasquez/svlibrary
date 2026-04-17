@@ -1,13 +1,132 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
-}
+
+  /*font stuff*/
+    .content {
+    /* Body content */
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    line-height: 1.65;
+
+    h1 {
+     font-family: 'Grandstander',;
+     font-weight: 600; /* force override */
+     font-size: 3.5rem;
+     color: #C67771;
+      
+    }
+
+    h2 {
+      font-family: 'Capriola', ital;
+      font-weight: 700;
+      font-size: 2.1rem;
+      color: #B95750;
+    }
+
+     h3 {
+      font-family: 'Capriola', ital;
+      font-weight: 400;
+      font-size: 1.9rem;
+      color: #B95750;
+    }
+      
+    h4 {
+      font-family: 'Capriola', serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: #716197;
+    }
+
+          /* Italic */
+    em {
+      color: #716197;
+    }
+
+    /* Bold */
+    strong {
+      color: #C67771;
+    }
+
+    /* Bold + Italic */
+    strong em,
+    em strong {
+      color: #716197;
+    }
+  } /*content*/
+  
+  /* RIGHT SIDEBAR */
+  .sidebar {
+    width: 350px !important;
+    font-size: 0.95rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+  }
+  
+  .sidebar .file-item .title {
+    font-size: 0.95rem;
+    color: #ddd;
+    font-weight: 500;
+  }
+
+  .sidebar .file-item svg {
+    width: 18px;
+    height: 18px;
+    stroke: #aaa;
+  }
+
+  .sidebar .folder-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #bbb;
+  }
+  
+  /*left sidebar*/
+
+.filetree-sidebar {
+  width: 320px; /* adjust sidebar width */
+  min-width: 320px;
+  max-width: 320px;
+  }
+  
+  /* File item text */
+  .file-item .title {
+    font-family: 'Grandstander', serif;
+    font-size: 0.95rem;
+    color: #ddd;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Current page bold + highlight */
+  .file-item.is-active .title {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  /* Hide default SVG icons */
+  .file-item svg {
+    display: none;
+  }
+
+  /* Insert custom Material Icon before title */
+  .file-item .title::before {
+    font-family: 'Material Symbols Outlined';
+    content: 'map_pin_heart';
+    font-size: 18px;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    color: #aaa; /* icon color */
+  }
+
+  /* Optional: hover effect for file items */
+  .file-item:hover .title {
+    color: #fff;
+  }
+
+  
+} /*body*/

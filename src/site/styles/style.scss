@@ -103,29 +103,29 @@ p > code {
 
 .callout {
     --callout-color: 68, 138, 255;
-    --callout-icon: lucide-pencil;
+    --callout-icon: lucide-circle-small;
 }
 .callout[data-callout="abstract"],
 .callout[data-callout="summary"],
 .callout[data-callout="tldr"] {
     --callout-color: 0, 176, 255;
-    --callout-icon: lucide-clipboard-list;
+    --callout-icon: lucide-circle-star;
 }
 .callout[data-callout="info"],
 .callout[data-callout="todo"] {
     --callout-color: 0, 184, 212;
 }
 .callout[data-callout="info"] {
-    --callout-icon: lucide-info;
+    --callout-icon: lucide-circle-star;
 }
 .callout[data-callout="todo"] {
-    --callout-icon: lucide-check-circle-2;
+    --callout-icon: lucide-sun-dim;
 }
 .callout[data-callout="tip"],
 .callout[data-callout="hint"],
 .callout[data-callout="important"] {
     --callout-color: 0, 191, 165;
-    --callout-icon: lucide-flame;
+    --callout-icon: lucide-sun-dim;
 }
 .callout[data-callout="success"],
 .callout[data-callout="check"],
